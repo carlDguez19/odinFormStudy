@@ -1,0 +1,15 @@
+:root{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+}
+
+section.hero > .heroFrame{
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    left: 0;
+    img{
+        position: relative;
+        width: 40%;
+    }
+}
