@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <section class="hero">
@@ -23,8 +38,39 @@
             <p class="messsage">This is not a real online service! You know you need something<br>like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You <i>know</i> you want to.</i></p>
         </div>
         <div class="formLayout">
-            <p class="formWelcome">Let's do this!</p>
-            
+            <form>
+                <p class="formWelcome">Let's do this!</p>
+                <ul>
+                    <li>
+                        <label class="firstLabel col1" for="first_name">FIRST NAME<span aria-label="First name">*</span></label>
+                        <input class="firstName col1" id="first_name" type="text">
+                    </li>
+                    <li>
+                        <label class="lastLabel col2" for="last_name">LAST NAME<span aria-label="Last name">*</span></label>
+                        <input class="lastName col2" id="last_name" type="text">
+                    </li>
+                    <li>
+                        <label class="emailLabel col1" for="email">EMAIL<span aria-label="email">*</span></label>
+                        <input class="email col1" id="email" type="email">
+                    </li>
+                    <li>
+                        <label class="pnLabel col2" for="phone_number">PHONE NUMBER</label>
+                        <input class="phone" id="phone_number" type="number" placeholder="XXX-XXX-XXXX">
+                    </li>
+                    <li>
+                        <label class="pwdLabel col1" for="pwd_org">PASSWORD</label>
+                        <input class="password col1" id="pwd_org" type="password">
+                    </li>
+                    <li>
+                        <label class="pwdConLabel col2" for="pwd_con">CONFIRM PASSWORD</label>
+                        <input class="passwordCon col2" id="pwd_con" type="password">
+                    </li>
+                </ul>
+                <div class="infoFooter">
+                    <button type="submit">Create Account</button>
+                    <p class="logIn">Already have an account? <a class="loginLink" href="#">Log in</a></p>
+                </div>
+            </form>
         </div>
     </section>
 </body>
