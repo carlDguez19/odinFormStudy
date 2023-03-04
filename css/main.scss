@@ -1,15 +1,96 @@
 :root{
+    --brand-name: 18vh;
+}
+body{
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
 }
 
 section.hero > .heroFrame{
-    position: relative;
+    position: absolute;
     width: 40%;
     height: 100vh;
     left: 0;
+    top: 0;
+    .backG{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.logoBanner{
+    height: 20%;
+    background-color: black;
+    opacity: .5;
+    z-index: 20;
+
+    // align
+    position: relative;
+    top: 50%;
+    transform: translate(0, -60%);
+}
+
+.brandName{
+    //align
+    position: absolute;
+    top: calc(50% + (var(--brand-name)/4)); //top: calc(50% + (var(--brand-name)/4));
+    transform: translate(0, -60%); //transform: translate(0, -60%);
+    left: 35%;
+    z-index: 20;
+    .brand{
+        font-weight: 600;
+        font-size: var(--brand-name);
+        color: #faf9f6;
+    }
+}
+
+.logo{
+    height: 20%;
+    z-index: 20;
+    //align
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -60%);
     img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+//INFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFOINFO
+section.info{
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    right: 0;
+    background-color: #f9f6ee;
+}
+
+.welcomeMessage{
+    position: relative;
+    top: 15%;
+    left: 5%;
+}
+
+.formLayout{
+    position: relative;
+    top: 20%;
+    background-color: #fffff0;
+    .actualForm{
         position: relative;
-        width: 40%;
+        left: 5%;
+        .formWelcome{
+            position: relative;
+            top: 1.2em;
+        }
+        ul{
+            list-style-type: none;
+            margin-top: 2em;
+        }
     }
 }

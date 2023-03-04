@@ -1,0 +1,93 @@
+:root {
+  --brand-name: 18vh;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+}
+
+section.hero > .heroFrame {
+  position: absolute;
+  width: 40%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+section.hero > .heroFrame .backG {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.logoBanner {
+  height: 20%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 20;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -60%);
+}
+
+.brandName {
+  position: absolute;
+  top: calc(50% + var(--brand-name) / 4);
+  transform: translate(0, -60%);
+  left: 35%;
+  z-index: 20;
+}
+.brandName .brand {
+  font-weight: 600;
+  font-size: var(--brand-name);
+  color: #faf9f6;
+}
+
+.logo {
+  height: 20%;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -60%);
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+section.info {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  right: 0;
+  background-color: #f9f6ee;
+}
+
+.welcomeMessage {
+  position: relative;
+  top: 15%;
+  left: 5%;
+}
+
+.formLayout {
+  position: relative;
+  top: 20%;
+  background-color: #fffff0;
+}
+.formLayout .actualForm {
+  position: relative;
+  left: 5%;
+}
+.formLayout .actualForm .formWelcome {
+  position: relative;
+  top: 1.2em;
+}
+.formLayout .actualForm ul {
+  list-style-type: none;
+  margin-top: 2em;
+}/*# sourceMappingURL=main.css.map */
