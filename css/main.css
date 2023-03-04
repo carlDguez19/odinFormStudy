@@ -78,6 +78,8 @@ section.info {
   position: relative;
   top: 20%;
   background-color: #fffff0;
+  height: 33vh;
+  box-shadow: 0 2px 5px #c5c6d0;
 }
 .formLayout .actualForm {
   position: relative;
@@ -87,7 +89,22 @@ section.info {
   position: relative;
   top: 1.2em;
 }
-.formLayout .actualForm ul {
+
+ul {
   list-style-type: none;
   margin-top: 2em;
+}
+ul .col1 {
+  position: absolute;
+  left: 5%;
+}
+ul .col1 input {
+  margin-top: 2em;
+  box-sizing: border-box;
+}
+ul .col2 {
+  position: absolute;
+  left: 30%;
+  margin-top: 2em;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */
